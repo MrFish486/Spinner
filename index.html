@@ -1,0 +1,12 @@
+<style>
+* {
+	text-align:center;
+}
+</style>
+<h1>What kind of aviator are you?</h1>
+<button onclick="
+vid=`<video width='600' height='400' autoplay='autoplay'>
+  <source src='`+Math.floor(Math.random()*4)+`.`+Math.floor(Math.random()*4)+`.mp4' type='video/mp4' />
+</video>`
+document.getElementById('v').innerHTML=vid
+">Spin!</button><div id="v" />
